@@ -30,31 +30,31 @@ async function generateSampleData() {
       },
       imageFileName: "ruby-tuesday.png",
       regularHours: {
-        Monday: {
+        monday: {
           open: "2024-06-10T09:00:00Z",
           close: "2024-06-10T21:00:00Z"
         },
-        Tuesday: {
+        tuesday: {
           open: "2024-06-11T09:00:00Z",
           close: "2024-06-11T21:00:00Z"
         },
-        Wednesday: {
+        wednesday: {
           open: "2024-06-12T09:00:00Z",
           close: "2024-06-12T21:00:00Z"
         },
-        Thursday: {
+        thursday: {
           open: "2024-06-13T09:00:00Z",
           close: "2024-06-13T21:00:00Z"
         },
-        Friday: {
+        friday: {
           open: "2024-06-14T09:00:00Z",
           close: "2024-06-14T22:00:00Z"
         },
-        Saturday: {
+        saturday: {
           open: "2024-06-15T10:00:00Z",
           close: "2024-06-15T22:00:00Z"
         },
-        Sunday: {
+        sunday: {
           open: "2024-06-16T11:00:00Z",
           close: "2024-06-16T18:00:00Z"
         }
@@ -72,31 +72,31 @@ async function generateSampleData() {
       },
       imageFileName: "taco-bell.png",
       regularHours: {
-        Monday: {
+        monday: {
           open: "2024-06-10T09:00:00Z",
           close: "2024-06-10T21:00:00Z"
         },
-        Tuesday: {
+        tuesday: {
           open: "2024-06-11T09:00:00Z",
           close: "2024-06-11T21:00:00Z"
         },
-        Wednesday: {
+        wednesday: {
           open: "2024-06-12T09:00:00Z",
           close: "2024-06-12T21:00:00Z"
         },
-        Thursday: {
+        thursday: {
           open: "2024-06-13T09:00:00Z",
           close: "2024-06-13T21:00:00Z"
         },
-        Friday: {
+        friday: {
           open: "2024-06-14T09:00:00Z",
           close: "2024-06-14T22:00:00Z"
         },
-        Saturday: {
+        saturday: {
           open: "2024-06-15T10:00:00Z",
           close: "2024-06-15T22:00:00Z"
         },
-        Sunday: {
+        sunday: {
           open: "2024-06-16T11:00:00Z",
           close: "2024-06-16T18:00:00Z"
         }
@@ -114,31 +114,199 @@ async function generateSampleData() {
       },
       imageFileName: "azul-cantina.jpeg",
       regularHours: {
-        Monday: {
+        monday: {
           open: "2024-06-10T09:00:00Z",
           close: "2024-06-10T21:00:00Z"
         },
-        Tuesday: {
+        tuesday: {
           open: "2024-06-11T09:00:00Z",
           close: "2024-06-11T21:00:00Z"
         },
-        Wednesday: {
+        wednesday: {
           open: "2024-06-12T09:00:00Z",
           close: "2024-06-12T21:00:00Z"
         },
-        Thursday: {
+        thursday: {
           open: "2024-06-13T09:00:00Z",
           close: "2024-06-13T21:00:00Z"
         },
-        Friday: {
+        friday: {
           open: "2024-06-14T09:00:00Z",
           close: "2024-06-14T22:00:00Z"
         },
-        Saturday: {
+        saturday: {
           open: "2024-06-15T10:00:00Z",
           close: "2024-06-15T22:00:00Z"
         },
-        Sunday: {
+        sunday: {
+          open: "2024-06-16T11:00:00Z",
+          close: "2024-06-16T18:00:00Z"
+        }
+      }
+    },
+    {
+      name: "Pizza Hut",
+      description: "Popular delivery, carry-out & dine-in chain known for pizza, wings & pasta, plus sides & desserts.",
+      websiteUrl: "www.pizzahut.com",
+      cuisineType: "pizza",
+      location: {
+        latitude: 35.9152,
+        longitude: -83.8574,
+        description: "In the Smoky Mountain Liquor's parking lot."
+      },
+      imageFileName: "pizza-hut.jpeg",
+      regularHours: {
+        monday: {
+          open: "2024-06-10T09:00:00Z",
+          close: "2024-06-10T21:00:00Z"
+        },
+        tuesday: {
+          open: "2024-06-11T09:00:00Z",
+          close: "2024-06-11T21:00:00Z"
+        },
+        wednesday: {
+          open: "2024-06-12T09:00:00Z",
+          close: "2024-06-12T21:00:00Z"
+        },
+        thursday: {
+          open: "2024-06-13T09:00:00Z",
+          close: "2024-06-13T21:00:00Z"
+        },
+        friday: {
+          open: "2024-06-14T09:00:00Z",
+          close: "2024-06-14T22:00:00Z"
+        },
+        saturday: {
+          open: "2024-06-15T10:00:00Z",
+          close: "2024-06-15T22:00:00Z"
+        },
+        sunday: {
+          open: "2024-06-16T11:00:00Z",
+          close: "2024-06-16T18:00:00Z"
+        }
+      }
+    },
+    {
+      name: "Burger King",
+      description: "Well-known fast-food chain serving grilled burgers, fries & shakes.",
+      websiteUrl: "www.burgerking.com",
+      cuisineType: "american",
+      location: {
+        latitude: 35.91219,
+        longitude: -83.84661,
+        description: "Right across from Waffle House"
+      },
+      imageFileName: "burger-king.png",
+      regularHours: {
+        monday: {
+          open: "2024-06-10T09:00:00Z",
+          close: "2024-06-10T21:00:00Z"
+        },
+        tuesday: {
+          open: "2024-06-11T09:00:00Z",
+          close: "2024-06-11T21:00:00Z"
+        },
+        wednesday: {
+          open: "2024-06-12T09:00:00Z",
+          close: "2024-06-12T21:00:00Z"
+        },
+        thursday: {
+          open: "2024-06-13T09:00:00Z",
+          close: "2024-06-13T21:00:00Z"
+        },
+        friday: {
+          open: "2024-06-14T09:00:00Z",
+          close: "2024-06-14T22:00:00Z"
+        },
+        saturday: {
+          open: "2024-06-15T10:00:00Z",
+          close: "2024-06-15T22:00:00Z"
+        },
+        sunday: {
+          open: "2024-06-16T11:00:00Z",
+          close: "2024-06-16T18:00:00Z"
+        }
+      }
+    },
+    {
+      name: "Subway",
+      description: "Casual counter-serve chain for build-your-own sandwiches & salads, with health-conscious options.",
+      websiteUrl: "www.subway.com",
+      cuisineType: "sandwiches",
+      location: {
+        latitude: 35.8687,
+        longitude: -83.7726,
+        description: "In Seymour in the gas station parking lot."
+      },
+      imageFileName: "subway.png",
+      regularHours: {
+        monday: {
+          open: "2024-06-10T09:00:00Z",
+          close: "2024-06-10T21:00:00Z"
+        },
+        tuesday: {
+          open: "2024-06-11T09:00:00Z",
+          close: "2024-06-11T21:00:00Z"
+        },
+        wednesday: {
+          open: "2024-06-12T09:00:00Z",
+          close: "2024-06-12T21:00:00Z"
+        },
+        thursday: {
+          open: "2024-06-13T09:00:00Z",
+          close: "2024-06-13T21:00:00Z"
+        },
+        friday: {
+          open: "2024-06-14T09:00:00Z",
+          close: "2024-06-14T22:00:00Z"
+        },
+        saturday: {
+          open: "2024-06-15T10:00:00Z",
+          close: "2024-06-15T22:00:00Z"
+        },
+        sunday: {
+          open: "2024-06-16T11:00:00Z",
+          close: "2024-06-16T18:00:00Z"
+        }
+      }
+    },
+    {
+      name: "Calhoun's",
+      description: "Chain serving Tennessee BBQ, fresh-ground burgers & sandwiches, plus homestyle sides & craft beers.",
+      websiteUrl: "www.calhouns.com",
+      cuisineType: "bbq",
+      location: {
+        latitude: 35.9532,
+        longitude: -83.9230,
+        description: "On the river!"
+      },
+      imageFileName: "calhouns.jpeg",
+      regularHours: {
+        monday: {
+          open: "2024-06-10T09:00:00Z",
+          close: "2024-06-10T21:00:00Z"
+        },
+        tuesday: {
+          open: "2024-06-11T09:00:00Z",
+          close: "2024-06-11T21:00:00Z"
+        },
+        wednesday: {
+          open: "2024-06-12T09:00:00Z",
+          close: "2024-06-12T21:00:00Z"
+        },
+        thursday: {
+          open: "2024-06-13T09:00:00Z",
+          close: "2024-06-13T21:00:00Z"
+        },
+        friday: {
+          open: "2024-06-14T09:00:00Z",
+          close: "2024-06-14T22:00:00Z"
+        },
+        saturday: {
+          open: "2024-06-15T10:00:00Z",
+          close: "2024-06-15T22:00:00Z"
+        },
+        sunday: {
           open: "2024-06-16T11:00:00Z",
           close: "2024-06-16T18:00:00Z"
         }
