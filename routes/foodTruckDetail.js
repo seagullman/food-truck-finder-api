@@ -58,7 +58,8 @@ router.get("/location/foodtrucks/:id", async (req, res) => {
                 description: data.location.description
             },
             imageUrl: imageUrl,
-            regularHours: data.regularHours
+            regularHours: data.regularHours,
+            menu: data.menu
         };
 
         res.status(200).json(foodTruckDetail);
