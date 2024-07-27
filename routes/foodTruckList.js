@@ -1,9 +1,8 @@
 const express = require('express');
 const router = express.Router();
 const admin = require("firebase-admin");
-const axios = require("axios");
 
-const GOOGLE_MAPS_API_KEY = process.env.GOOGLE_MAPS_API_KEY;
+const distanceUtils = require('../distanceUtils')
 
 class FoodTruckListItem {
     constructor(id, name, description, distanceInMiles, latitude, longitude, imageUrl) {
@@ -15,14 +14,6 @@ class FoodTruckListItem {
         this.longitude = longitude;
         this.imageUrl = imageUrl;
     }
-}
-
-// Function to get the driving distance between two points
-async function getDrivingDistance(lat1, lon1, lat2, lon2) {
-    const url = `https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&origins=${lat1},${lon1}&destinations=${lat2},${lon2}&key=${GOOGLE_MAPS_API_KEY}`;
-    const response = await axios.get(url);
-    const distanceInMiles = response.data.rows[0].elements[0].distance.value / 1609.34; // Convert meters to miles
-    return distanceInMiles;
 }
 
 // Function to get the public download URL of an image from Firebase Storage
@@ -62,7 +53,7 @@ router.get("/location/foodtrucks", async (req, res) => {
         for (const doc of foodTrucksSnapshot.docs) {
             const data = doc.data();
             console.log(`Document data: ${JSON.stringify(data)}`);
-            const distanceInMiles = await getDrivingDistance(latitude, longitude, data.location.latitude, data.location.longitude);
+            const distanceInMiles = await distanceUtils.getDrivingDistance(latitude, longitude, data.location.latitude, data.location.longitude);
 
             if (distanceInMiles <= maxDistance) {
                 console.log(`imageUrl for ${data.name}: ${data.imageFileName}`);
