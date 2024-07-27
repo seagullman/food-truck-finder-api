@@ -767,6 +767,126 @@ async function generateSampleData() {
           ]
         }
       ]
+    },
+    {
+      name: "Joey's Red Hots",
+      description: "Serving delicious hotdogs, burgers, and more with a focus on quality and taste.",
+      websiteUrl: "www.joeysredhots.com",
+      cuisineType: "american",
+      location: {
+        latitude: 41.600970,
+        longitude: -87.841850,
+        description: "In the heart of the city!"
+      },
+      imageFileName: "joeysredhots.jpeg",
+      regularHours: {
+        monday: {
+          open: "2024-06-10T09:00:00Z",
+          close: "2024-06-10T21:00:00Z"
+        },
+        tuesday: {
+          open: "2024-06-11T09:00:00Z",
+          close: "2024-06-11T21:00:00Z"
+        },
+        wednesday: {
+          open: "2024-06-12T09:00:00Z",
+          close: "2024-06-12T21:00:00Z"
+        },
+        thursday: {
+          open: "2024-06-13T09:00:00Z",
+          close: "2024-06-13T21:00:00Z"
+        },
+        friday: {
+          open: "2024-06-14T09:00:00Z",
+          close: "2024-06-14T22:00:00Z"
+        },
+        saturday: {
+          open: "2024-06-15T10:00:00Z",
+          close: "2024-06-15T22:00:00Z"
+        },
+        sunday: {
+          open: "2024-06-16T11:00:00Z",
+          close: "2024-06-16T18:00:00Z"
+        }
+      },
+      menu: [
+        {
+          category: "Hotdogs",
+          items: [
+            {
+              name: "Classic Hotdog",
+              description: "All-beef hotdog with your choice of toppings.",
+              price: 3.99,
+              isVegetarian: false,
+              isGlutenFree: false
+            },
+            {
+              name: "Chili Cheese Dog",
+              description: "Hotdog topped with chili and melted cheese.",
+              price: 4.99,
+              isVegetarian: false,
+              isGlutenFree: false
+            }
+          ]
+        },
+        {
+          category: "Burgers",
+          items: [
+            {
+              name: "Classic Burger",
+              description: "Juicy beef patty with lettuce, tomato, and pickles.",
+              price: 5.99,
+              isVegetarian: false,
+              isGlutenFree: false
+            },
+            {
+              name: "Cheeseburger",
+              description: "Beef patty with melted cheese, lettuce, tomato, and pickles.",
+              price: 6.49,
+              isVegetarian: false,
+              isGlutenFree: false
+            }
+          ]
+        },
+        {
+          category: "Sides",
+          items: [
+            {
+              name: "Fries",
+              description: "Crispy golden fries.",
+              price: 2.49,
+              isVegetarian: true,
+              isGlutenFree: false
+            },
+            {
+              name: "Onion Rings",
+              description: "Battered and fried onion rings.",
+              price: 2.99,
+              isVegetarian: true,
+              isGlutenFree: false
+            }
+          ]
+        },
+        {
+          category: "Drinks",
+          items: [
+            {
+              name: "Soft Drink",
+              description: "Choice of Coke, Diet Coke, Sprite, and more.",
+              price: 1.99,
+              isVegetarian: true,
+              isGlutenFree: true
+            },
+            {
+              name: "Milkshake",
+              description: "Creamy milkshake in various flavors.",
+              price: 3.99,
+              isVegetarian: true,
+              isGlutenFree: false
+            }
+          ]
+        }
+      ]
     }
   ];
 
